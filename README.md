@@ -8,8 +8,8 @@ A web application that generates user stories and engineering tasks from feature
 
 ## Submission
 
-- **Live app**: [Add your hosted link here after deployment]
-- **GitHub repo**: [Add your GitHub repo link here]
+- **Live app**: https://tasks-generator-six.vercel.app
+- **GitHub repo**: https://github.com/mohittumram/tasks-generator
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step deployment (Render + Vercel).
 
