@@ -44,8 +44,7 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step deployment (Render + Vercel)
 ### Option 1: Docker (Recommended - One Command)
 
 ```bash
-# Ensure backend/.env exists with your API key (copy from backend/.env.example)
-# Then run:
+# Copy backend/.env.example to backend/.env and set your API key, then run:
 docker-compose up
 ```
 
@@ -62,9 +61,9 @@ The app will be available at:
 cd backend
 pip install -r requirements.txt
 
-# Create .env file (copy from backend/env.example)
-cp env.example .env
-# Edit .env and add your GROQ_API_KEY
+# Create .env file (copy from .env.example)
+cp .env.example .env
+# Edit .env and add your GROQ_API_KEY (or HUGGINGFACE_API_KEY)
 
 # Run the server
 uvicorn app.main:app --reload
@@ -135,6 +134,7 @@ VITE_API_URL=http://localhost:8000
 ```
 tasks-generator/
 ├── backend/
+│   ├── .env.example        # Copy to .env and set API keys (do not commit .env)
 │   ├── app/
 │   │   ├── main.py          # FastAPI app
 │   │   ├── models.py        # Database models
